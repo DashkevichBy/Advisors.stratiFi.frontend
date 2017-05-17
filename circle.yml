@@ -1,0 +1,19 @@
+machine:
+  python:
+    version: 2.7
+
+dependencies:
+  pre:
+    - sudo pip install -U selenium
+    - sudo apt-get update
+    - sudo apt-get install nginx
+     # Copy the html page to nginx default public www location
+     #- sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
+    
+  post:
+    - pip install -U -r dev-requirements.txt
+
+test:
+  pre:
+    - git clone https://github.com/DashkevichBy/Advisors.stratiFi.frontend/tree/master/stratifi_tests.git
+    
