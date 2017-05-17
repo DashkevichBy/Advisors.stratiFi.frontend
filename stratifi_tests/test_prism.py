@@ -12,7 +12,7 @@ class TestPrism(BaseTest):
     def test_prism_from_dashboard(self):
         stratifi_page = StratifiPage()
         stratifi_page.check_if_page_is_loaded()
-        print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))
+        # print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))
         stratifi_page.press_start_analise()
         stratifi_page.press_go_to_prism()
         risk_analysis_page = RiskAnalysisPage()
@@ -20,9 +20,8 @@ class TestPrism(BaseTest):
         risk_analysis_page.select_first_option()
         risk_analysis_page.open_date_range_dropdown()
         risk_analysis_page.press_set_range_button()
-
         risk_analysis_page.check_prism_analysis_is_shown()
-        print('Prism from dashboard works: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
+        # print('Prism from dashboard works: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
 
     def test_prism_from_left_panel(self):
         stratifi_page = StratifiPage()
@@ -35,7 +34,7 @@ class TestPrism(BaseTest):
         risk_analysis_page.open_date_range_dropdown()
         risk_analysis_page.press_set_range_button()
         risk_analysis_page.check_prism_analysis_is_shown()
-        print('Prism from left panel: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
+        # print('Prism from left panel: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
 
     def test_prism_creating_new_model(self):
         stratifi_page = StratifiPage()
@@ -45,7 +44,7 @@ class TestPrism(BaseTest):
         risk_analysis_page = RiskAnalysisPage()
         risk_analysis_page.press_add_models_button()
         risk_analysis_page.check_if_model_portfolio_screen_is_shown()
-        print('Create Model Portfolio screen opened: ' + str(risk_analysis_page.is_element_present('modelNameField')))
+        # print('Create Model Portfolio screen opened: ' + str(risk_analysis_page.is_element_present('modelNameField')))
         risk_analysis_page.enter_model_name("Model for autotest")
         risk_analysis_page.open_model_type_dropdown()
         risk_analysis_page.chose_model_type_conservative()
@@ -59,7 +58,7 @@ class TestPrism(BaseTest):
         risk_analysis_page.open_date_range_dropdown()
         risk_analysis_page.press_set_range_button()
         risk_analysis_page.check_prism_analysis_is_shown()
-        print('Prism analysis for new model works: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
+        # print('Prism analysis for new model works: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
 
     def test_archive_created_model(self):
         stratifi_page = StratifiPage()
@@ -71,7 +70,7 @@ class TestPrism(BaseTest):
         models_page.press_archive_button_for_target_model()
         time.sleep(3)
         models_page.check_if_target_model_was_deleted()
-        print('The model was not archived: ' + str(models_page.is_element_present('targetModel')))
+        # print('The model was not archived: ' + str(models_page.is_element_present('targetModel')))
 
 if __name__ == "__main__":
     pytest.main()

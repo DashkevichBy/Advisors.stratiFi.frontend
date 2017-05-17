@@ -6,7 +6,6 @@ from pages.advisors_stratifi_pages.link_accounts_page import LinkAccountsPage
 from pages.advisors_stratifi_pages.stratifi_page import StratifiPage
 
 from common import BaseTest
-from common import Driver
 from pages.advisors_stratifi_pages.documents_page import DocumentsPage
 
 
@@ -19,7 +18,7 @@ class TestOnboarding(BaseTest):
     def test_link_acc_and_send_documents(self):
         self.stratifi_page.open()
         self.stratifi_page.check_if_page_is_loaded()
-        print('Page is loaded: ' + str(self.stratifi_page.is_element_present('startAnalise')))
+        # print('Page is loaded: ' + str(self.stratifi_page.is_element_present('startAnalise')))
         self.stratifi_page.press_client_button()
         self.clients_page.check_if_clients_page_is_opened()
         self.clients_page.press_accnotlinked_button_on_first_available_client()
@@ -51,9 +50,6 @@ class TestOnboarding(BaseTest):
         self.link_accounts_page.press_unlink_acc_button()
         time.sleep(10)
         self.link_accounts_page.check_if_target_account_was_deleted()
-        Driver.get().close()
-
-
 
 
 if __name__ == "__main__":

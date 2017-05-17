@@ -228,21 +228,21 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <p>Report generated on 17-May-2017 at 12:45:51 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.14.2</p>
+    <p>Report generated on 17-May-2017 at 17:45:49 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.14.2</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>BUILD_ID</td>
-        <td>847</td></tr>
+        <td>852</td></tr>
       <tr>
         <td>BUILD_NUMBER</td>
-        <td>847</td></tr>
+        <td>852</td></tr>
       <tr>
         <td>BUILD_TAG</td>
-        <td>jenkins-StratifiTestRun-847</td></tr>
+        <td>jenkins-StratifiTestRun-852</td></tr>
       <tr>
         <td>BUILD_URL</td>
-        <td><a href="http://localhost:8080/job/StratifiTestRun/847/" target="_blank">http://localhost:8080/job/StratifiTestRun/847/</a></td></tr>
+        <td><a href="http://localhost:8080/job/StratifiTestRun/852/" target="_blank">http://localhost:8080/job/StratifiTestRun/852/</a></td></tr>
       <tr>
         <td>EXECUTOR_NUMBER</td>
         <td>0</td></tr>
@@ -271,7 +271,7 @@ function filter_table(elem) {
         <td>WORKSPACE</td>
         <td>C:\Program Files (x86)\Jenkins\workspace\StratifiTestRun</td></tr></table>
     <h2>Summary</h2>
-    <p>9 tests ran in 391.88 seconds. </p>
+    <p>9 tests ran in 389.50 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">4 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -287,57 +287,56 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">stratifi_tests/test_prism.py::TestPrism::()::test_prism_from_dashboard</td>
-          <td class="col-duration">62.68</td>
+          <td class="col-duration">62.14</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;stratifi_tests.test_prism.TestPrism object at 0x01D76210&gt;<br/><br/>    def test_prism_from_dashboard(self):<br/>        stratifi_page = StratifiPage()<br/>        stratifi_page.check_if_page_is_loaded()<br/>        print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))<br/>        stratifi_page.press_start_analise()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        risk_analysis_page.open_chose_module_dropdown()<br/>        risk_analysis_page.select_first_option()<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>    <br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_prism.py:24: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01D762B0&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/>----------------------------- Captured stdout call -----------------------------<br/>Page is loaded: True
+            <div class="log">self = &lt;stratifi_tests.test_prism.TestPrism object at 0x01D680F0&gt;<br/><br/>    def test_prism_from_dashboard(self):<br/>        stratifi_page = StratifiPage()<br/>        stratifi_page.check_if_page_is_loaded()<br/>        print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))<br/>        stratifi_page.press_start_analise()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        risk_analysis_page.open_chose_module_dropdown()<br/>        risk_analysis_page.select_first_option()<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>    <br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_prism.py:24: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01D681F0&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/>----------------------------- Captured stdout call -----------------------------<br/>Page is loaded: False
 </div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">stratifi_tests/test_prism.py::TestPrism::()::test_prism_from_left_panel</td>
-          <td class="col-duration">62.93</td>
+          <td class="col-duration">62.58</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;stratifi_tests.test_prism.TestPrism object at 0x01D76EB0&gt;<br/><br/>    def test_prism_from_left_panel(self):<br/>        stratifi_page = StratifiPage()<br/>        stratifi_page.open()<br/>        stratifi_page.press_prism_button()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        risk_analysis_page.open_chose_module_dropdown()<br/>        risk_analysis_page.select_first_option()<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_prism.py:37: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01D76F10&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;stratifi_tests.test_prism.TestPrism object at 0x01D68E50&gt;<br/><br/>    def test_prism_from_left_panel(self):<br/>        stratifi_page = StratifiPage()<br/>        stratifi_page.open()<br/>        stratifi_page.press_prism_button()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        risk_analysis_page.open_chose_module_dropdown()<br/>        risk_analysis_page.select_first_option()<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_prism.py:37: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01D68EB0&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">stratifi_tests/test_prism.py::TestPrism::()::test_prism_creating_new_model</td>
-          <td class="col-duration">68.92</td>
+          <td class="col-duration">68.67</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;stratifi_tests.test_prism.TestPrism object at 0x01DAC7F0&gt;<br/><br/>    def test_prism_creating_new_model(self):<br/>        stratifi_page = StratifiPage()<br/>        stratifi_page.open()<br/>        stratifi_page.press_prism_button()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        risk_analysis_page.press_add_models_button()<br/>        risk_analysis_page.check_if_model_portfolio_screen_is_shown()<br/>        print('Create Model Portfolio screen opened: ' + str(risk_analysis_page.is_element_present('modelNameField')))<br/>        risk_analysis_page.enter_model_name("Model for autotest")<br/>        risk_analysis_page.open_model_type_dropdown()<br/>        risk_analysis_page.chose_model_type_conservative()<br/>        risk_analysis_page.enter_a_ticker("AAC")<br/>        risk_analysis_page.check_if_any_tickers_suggested()<br/>        risk_analysis_page.chose_first_suggestion()<br/>        risk_analysis_page.enter_model_weight("100")<br/>        risk_analysis_page.press_create_model_button()<br/>        risk_analysis_page.check_if_new_model_was_saved()<br/>        time.sleep(2)<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_prism.py:61: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01DAC890&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/>----------------------------- Captured stdout call -----------------------------<br/>Create Model Portfolio screen opened: True
+            <div class="log">self = &lt;stratifi_tests.test_prism.TestPrism object at 0x01DA1750&gt;<br/><br/>    def test_prism_creating_new_model(self):<br/>        stratifi_page = StratifiPage()<br/>        stratifi_page.open()<br/>        stratifi_page.press_prism_button()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        risk_analysis_page.press_add_models_button()<br/>        risk_analysis_page.check_if_model_portfolio_screen_is_shown()<br/>        print('Create Model Portfolio screen opened: ' + str(risk_analysis_page.is_element_present('modelNameField')))<br/>        risk_analysis_page.enter_model_name("Model for autotest")<br/>        risk_analysis_page.open_model_type_dropdown()<br/>        risk_analysis_page.chose_model_type_conservative()<br/>        risk_analysis_page.enter_a_ticker("AAC")<br/>        risk_analysis_page.check_if_any_tickers_suggested()<br/>        risk_analysis_page.chose_first_suggestion()<br/>        risk_analysis_page.enter_model_weight("100")<br/>        risk_analysis_page.press_create_model_button()<br/>        risk_analysis_page.check_if_new_model_was_saved()<br/>        time.sleep(2)<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_prism.py:61: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01DA17D0&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/>----------------------------- Captured stdout call -----------------------------<br/>Create Model Portfolio screen opened: True
 </div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">stratifi_tests/test_propgen_from_prism.py::TestPropGenFromPrism::()::test_propgen_from_prism</td>
-          <td class="col-duration">63.90</td>
+          <td class="col-duration">63.08</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;stratifi_tests.test_propgen_from_prism.TestPropGenFromPrism object at 0x01DACF50&gt;<br/><br/>    def test_propgen_from_prism(self):<br/>        stratifi_page = StratifiPage()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        stratifi_page.open()<br/>        stratifi_page.check_if_page_is_loaded()<br/>        print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))<br/>        stratifi_page.press_start_analise()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page.open_chose_module_dropdown()<br/>        risk_analysis_page.select_first_option()<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_propgen_from_prism.py:23: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01DACF10&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/>----------------------------- Captured stdout call -----------------------------<br/>Page is loaded: True
+            <div class="log">self = &lt;stratifi_tests.test_propgen_from_prism.TestPropGenFromPrism object at 0x01DA1950&gt;<br/><br/>    def test_propgen_from_prism(self):<br/>        stratifi_page = StratifiPage()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        stratifi_page.open()<br/>        stratifi_page.check_if_page_is_loaded()<br/>        print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))<br/>        stratifi_page.press_start_analise()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page.open_chose_module_dropdown()<br/>        risk_analysis_page.select_first_option()<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_propgen_from_prism.py:23: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01DA1CD0&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/>----------------------------- Captured stdout call -----------------------------<br/>Page is loaded: True
 </div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">stratifi_tests/test_login.py::TestLogin::()::test_login</td>
-          <td class="col-duration">6.67</td>
+          <td class="col-duration">5.40</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">----------------------------- Captured stdout call -----------------------------<br/>Successfully logged in: True
------------------------------ Captured stderr call -----------------------------<br/>INFO:root:Trying to login
+            <div class="log">----------------------------- Captured stderr call -----------------------------<br/>INFO:root:Trying to login
 </div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">stratifi_tests/test_prism.py::TestPrism::()::test_archive_created_model</td>
-          <td class="col-duration">16.38</td>
+          <td class="col-duration">16.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -347,7 +346,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">stratifi_tests/test_propgen_from_clients.py::TestPropGenFromClients::()::test_propgen_from_clientlist</td>
-          <td class="col-duration">18.01</td>
+          <td class="col-duration">20.35</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -359,7 +358,7 @@ Proposal was generated: True
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">stratifi_tests/test_propgen_from_strategies.py::TestPropGenFromStrategies::()::test_propgen_from_strategies</td>
-          <td class="col-duration">16.66</td>
+          <td class="col-duration">17.29</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -372,7 +371,7 @@ Proposal was generated: True
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">stratifi_tests/test_q_client_onboarding.py::TestOnboarding::()::test_link_acc_and_send_documents</td>
-          <td class="col-duration">66.99</td>
+          <td class="col-duration">67.53</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
