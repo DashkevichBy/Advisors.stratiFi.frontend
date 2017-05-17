@@ -11,4 +11,4 @@ dependencies:
 test:
   override:
     - echo $PYTHONPATH
-    - python stratifi_tests/test_login.py
+    - cd stratifi_tests && pytest test_login.py
