@@ -1,0 +1,6 @@
+{
+  "stratifi_tests/test_prism.py::TestPrism::()::test_prism_creating_new_model": true, 
+  "stratifi_tests/test_prism.py::TestPrism::()::test_prism_from_dashboard": true, 
+  "stratifi_tests/test_prism.py::TestPrism::()::test_prism_from_left_panel": true, 
+  "stratifi_tests/test_propgen_from_prism.py::TestPropGenFromPrism::()::test_propgen_from_prism": true
+}
