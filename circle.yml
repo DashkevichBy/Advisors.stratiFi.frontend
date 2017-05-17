@@ -10,8 +10,8 @@ dependencies:
      # Copy the html page to nginx default public www location
      #- sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
     
-  post:
-    - pip install -U -r dev-requirements.txt
+  #post:
+    #- pip install -U -r dev-requirements.txt
 
 test:
   pre:
