@@ -22,7 +22,7 @@ class TestLogin(BaseTest):
         sign_in_page.press_sign_in()
         stratifi_page = StratifiPage()
         stratifi_page.check_if_page_is_loaded()
-        print('Successfully logged in: ' + str(stratifi_page.is_element_present('startAnalise', timeout=60)))
+        # print('Successfully logged in: ' + str(stratifi_page.is_element_present('startAnalise', timeout=60)))
 
 
 if __name__ == "__main__":
