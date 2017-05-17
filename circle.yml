@@ -19,4 +19,5 @@ test:
     - git clone https://github.com/DashkevichBy/Advisors.stratiFi.frontend/tree/master/pages.git
     
   override:
-    - python stratifi_tests/test_login.py
+
+    - cd stratifi_tests && python test_login.py
