@@ -1,23 +1,14 @@
 machine:
   python:
     version: 2.7
+  environment:
+    PYTHONPATH: ${HOME}
 
 dependencies:
   pre:
-    - sudo pip install -U selenium
-    - sudo apt-get update
-    - sudo apt-get install nginx
-     # Copy the html page to nginx default public www location
-     #- sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
-    
-  #post:
-    #- pip install -U -r dev-requirements.txt
+    - pip install -U selenium
 
 test:
-  pre:
-    - git clone https://github.com/DashkevichBy/Advisors.stratiFi.frontend/tree/master/stratifi_tests.git
-    - git clone https://github.com/DashkevichBy/Advisors.stratiFi.frontend/tree/master/pages.git
-    
   override:
-
-    - cd stratifi_tests && python test_login.py
+    - echo $PYTHONPATH
+    - python stratifi_tests/test_login.py
