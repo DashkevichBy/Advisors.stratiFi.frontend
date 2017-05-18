@@ -71,5 +71,5 @@ class BasePage(object):
     def implicitly_wait(self, *args):
         return self._driver.implicitly_wait(*args)
 
-    def get_title(self):
-        return Driver.get().title
+    # def get_title(self):
+    #     return Driver.get().title
