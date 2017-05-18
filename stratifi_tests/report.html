@@ -228,21 +228,21 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <p>Report generated on 18-May-2017 at 12:39:44 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.14.2</p>
+    <p>Report generated on 18-May-2017 at 13:40:49 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.14.2</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>BUILD_ID</td>
-        <td>858</td></tr>
+        <td>859</td></tr>
       <tr>
         <td>BUILD_NUMBER</td>
-        <td>858</td></tr>
+        <td>859</td></tr>
       <tr>
         <td>BUILD_TAG</td>
-        <td>jenkins-StratifiTestRun-858</td></tr>
+        <td>jenkins-StratifiTestRun-859</td></tr>
       <tr>
         <td>BUILD_URL</td>
-        <td><a href="http://localhost:8080/job/StratifiTestRun/858/" target="_blank">http://localhost:8080/job/StratifiTestRun/858/</a></td></tr>
+        <td><a href="http://localhost:8080/job/StratifiTestRun/859/" target="_blank">http://localhost:8080/job/StratifiTestRun/859/</a></td></tr>
       <tr>
         <td>EXECUTOR_NUMBER</td>
         <td>0</td></tr>
@@ -271,8 +271,8 @@ function filter_table(elem) {
         <td>WORKSPACE</td>
         <td>C:\Program Files (x86)\Jenkins\workspace\StratifiTestRun</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 11.35 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>2 tests ran in 76.40 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -283,11 +283,20 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">stratifi_tests/test_prism.py::TestPrism::()::test_prism_from_dashboard</td>
+          <td class="col-duration">63.50</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;stratifi_tests.test_prism.TestPrism object at 0x01DAFD30&gt;<br/><br/>    def test_prism_from_dashboard(self):<br/>        stratifi_page = StratifiPage()<br/>        stratifi_page.check_if_page_is_loaded()<br/>        # print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))<br/>        stratifi_page.press_start_analise()<br/>        stratifi_page.press_go_to_prism()<br/>        risk_analysis_page = RiskAnalysisPage()<br/>        risk_analysis_page.open_chose_module_dropdown()<br/>        risk_analysis_page.select_first_option()<br/>        risk_analysis_page.open_date_range_dropdown()<br/>        risk_analysis_page.press_set_range_button()<br/>&gt;       risk_analysis_page.check_prism_analysis_is_shown()<br/><br/>test_prism.py:23: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;pages.advisors_stratifi_pages.risk_analysis_page.RiskAnalysisPage object at 0x01DAFDF0&gt;<br/><br/>    def check_prism_analysis_is_shown(self):<br/>&gt;       assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"<br/><span class="error">E       AssertionError: Prism analysis was not shown</span><br/><br/>..\pages\advisors_stratifi_pages\risk_analysis_page.py:81: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">stratifi_tests/test_login.py::TestLogin::()::test_login</td>
-          <td class="col-duration">4.85</td>
+          <td class="col-duration">5.25</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">

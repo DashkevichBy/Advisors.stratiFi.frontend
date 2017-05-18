@@ -3,12 +3,14 @@ import time
 import pytest
 from pages.advisors_stratifi_pages.risk_analysis_page import RiskAnalysisPage
 from pages.advisors_stratifi_pages.stratifi_page import StratifiPage
+from common import Driver
 
 from common import BaseTest
 from pages.advisors_stratifi_pages.models_page import ModelsPage
 
 
 class TestPrism(BaseTest):
+
     def test_prism_from_dashboard(self):
         stratifi_page = StratifiPage()
         stratifi_page.check_if_page_is_loaded()
