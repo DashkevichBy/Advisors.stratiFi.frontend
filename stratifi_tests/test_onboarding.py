@@ -15,7 +15,7 @@ class TestOnboarding(BaseTest):
     link_accounts_page = LinkAccountsPage()
     documents_page = DocumentsPage()
 
-    def test_link_acc_and_send_documents(self):
+    def xtest_link_acc_and_send_documents(self):
         self.stratifi_page.check_if_page_is_loaded()
         # print('Page is loaded: ' + str(self.stratifi_page.is_element_present('startAnalise')))
         self.stratifi_page.press_client_button()

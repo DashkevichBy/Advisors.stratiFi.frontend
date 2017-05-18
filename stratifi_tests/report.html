@@ -228,21 +228,21 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <p>Report generated on 18-May-2017 at 10:40:22 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.14.2</p>
+    <p>Report generated on 18-May-2017 at 11:40:51 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.14.2</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>BUILD_ID</td>
-        <td>856</td></tr>
+        <td>857</td></tr>
       <tr>
         <td>BUILD_NUMBER</td>
-        <td>856</td></tr>
+        <td>857</td></tr>
       <tr>
         <td>BUILD_TAG</td>
-        <td>jenkins-StratifiTestRun-856</td></tr>
+        <td>jenkins-StratifiTestRun-857</td></tr>
       <tr>
         <td>BUILD_URL</td>
-        <td><a href="http://localhost:8080/job/StratifiTestRun/856/" target="_blank">http://localhost:8080/job/StratifiTestRun/856/</a></td></tr>
+        <td><a href="http://localhost:8080/job/StratifiTestRun/857/" target="_blank">http://localhost:8080/job/StratifiTestRun/857/</a></td></tr>
       <tr>
         <td>EXECUTOR_NUMBER</td>
         <td>0</td></tr>
@@ -271,8 +271,8 @@ function filter_table(elem) {
         <td>WORKSPACE</td>
         <td>C:\Program Files (x86)\Jenkins\workspace\StratifiTestRun</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 49.14 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>2 tests ran in 78.51 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -283,20 +283,20 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">stratifi_tests/test_onboarding.py::TestOnboarding::()::test_link_acc_and_send_documents</td>
-          <td class="col-duration">32.44</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;stratifi_tests.test_onboarding.TestOnboarding object at 0x01E33BD0&gt;<br/><br/>    def test_link_acc_and_send_documents(self):<br/>        self.sign_in_page.open()<br/>&gt;       self.sign_in_page.enter_login('akhil@stratifi.com')<br/><br/>test_onboarding.py:22: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>..\pages\advisors_stratifi_pages\sign_in_page.py:22: in enter_login<br/>    self.emailField.send_keys(login)<br/>..\webium\find.py:47: in __get__<br/>    self._search_element()<br/>..\webium\find.py:65: in _search_element<br/>    web_element = self.context.find_element(self.by, self.value)<br/>..\webium\base_page.py:66: in find_element<br/>    return self._driver.find_element(*args)<br/>c:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py:784: in find_element<br/>    'value': value})['value']<br/>c:\python27\lib\site-packages\selenium\webdriver\remote\webdriver.py:249: in execute<br/>    self.error_handler.check_response(response)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x01DA6930&gt;<br/>response = {'status': 404, 'value': '{"value":{"error":"no such element","message":"Unable to locate element: .//*[@name=\"email\...        0x415a19 - &lt;no info&gt;\n   9:           0x6b6e43 - &lt;no info&gt;\n  10:         0x772459cd - BaseThreadInitThunk"}}'}<br/><br/>    def check_response(self, response):<br/>        """<br/>            Checks that a JSON response from the WebDriver does not have an error.<br/>    <br/>            :Args:<br/>             - response - The JSON response from the WebDriver server as a dictionary<br/>               object.<br/>    <br/>            :Raises: If the response contains an error message.<br/>            """<br/>        status = response.get('status', None)<br/>        if status is None or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get("message", "")<br/>        screen = response.get("screen", "")<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get('value', None)<br/>            if value_json and isinstance(value_json, basestring):<br/>                import json<br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value['value']<br/>                    status = value.get('error', None)<br/>                    if status is None:<br/>                        status = value["status"]<br/>                        message = value["value"]<br/>                        if not isinstance(message, basestring):<br/>                            value = message<br/>                            message = message.get('message')<br/>                    else:<br/>                        message = value.get('message', None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class = ErrorInResponseException<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif status in ErrorCode.INVALID_SELECTOR \<br/>                or status in ErrorCode.INVALID_XPATH_SELECTOR \<br/>                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if value == '' or value is None:<br/>            value = response['value']<br/>        if isinstance(value, basestring):<br/>            if exception_class == ErrorInResponseException:<br/>                raise exception_class(response, value)<br/>            raise exception_class(value)<br/>        if message == "" and 'message' in value:<br/>            message = value['message']<br/>    <br/>        screen = None<br/>        if 'screen' in value:<br/>            screen = value['screen']<br/>    <br/>        stacktrace = None<br/>        if 'stackTrace' in value and value['stackTrace']:<br/>            stacktrace = []<br/>            try:<br/>                for frame in value['stackTrace']:<br/>                    line = self._value_or_default(frame, 'lineNumber', '')<br/>                    file = self._value_or_default(frame, 'fileName', '&lt;anonymous&gt;')<br/>                    if line:<br/>                        file = "%s:%s" % (file, line)<br/>                    meth = self._value_or_default(frame, 'methodName', '&lt;anonymous&gt;')<br/>                    if 'className' in frame:<br/>                        meth = "%s.%s" % (frame['className'], meth)<br/>                    msg = "    at %s (%s)"<br/>                    msg = msg % (meth, file)<br/>                    stacktrace.append(msg)<br/>            except TypeError:<br/>                pass<br/>        if exception_class == ErrorInResponseException:<br/>            raise exception_class(response, message)<br/>        elif exception_class == UnexpectedAlertPresentException and 'alert' in value:<br/>            raise exception_class(message, screen, stacktrace, value['alert'].get('text'))<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       NoSuchElementException: Message: Unable to locate element: .//*[@name="email"]</span><br/><br/>c:\python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py:194: NoSuchElementException<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">stratifi_tests/test_login.py::TestLogin::()::test_login</td>
-          <td class="col-duration">6.05</td>
+          <td class="col-duration">6.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">stratifi_tests/test_onboarding.py::TestOnboarding::()::test_link_acc_and_send_documents</td>
+          <td class="col-duration">64.40</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
