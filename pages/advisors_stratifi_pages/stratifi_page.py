@@ -6,8 +6,8 @@ from abstract_base_page import AbstractBasePage
 class StratifiPage(AbstractBasePage):
     startAnalise = Find(by=By.XPATH, value='.//*[text()="Start Analyzing Your Portfolios"]')
     goToPrismButton = Find(by=By.XPATH, value='.//*[text()="Go to PRISM"]')
-    clientsButton = Find(by=By.XPATH, value='.//*[@class="icon-clients_nav"]/following-sibling::*')
-    # clientsButton = Find(by=By.XPATH, value='.//*[text()="Clients"]')
+    # clientsButton = Find(by=By.XPATH, value='.//*[@class="icon-clients_nav"]/following-sibling::*')
+    clientsButton = Find(by=By.XPATH, value='.//*[text()="Clients"]')
     validClient = Find(by=By.XPATH, value='.//*[text()="Beckert"]')
     profileDropDown = Find(by=By.XPATH, value='.//*[@id="dropdownUserExtra"]')
     proposalsMenuItem = Find(by=By.XPATH, value='.//*[@id="dropdownUserExtra"]/following::a[text()="Proposals"]')
