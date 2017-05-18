@@ -80,12 +80,12 @@ class StratifiPage(AbstractBasePage, unittest.TestCase):
 
 # ---------------Asserts-------------------------------
 
-    def check_if_page_is_loaded(self):
-       # assert u"StratiFi" in self.get_title(), "Stratifi page was not loaded"
-       assert self.is_element_present("startAnalise", timeout=10), "Client proposal generation screen was not shown"
+    # def check_if_page_is_loaded(self):
+    #    # assert u"StratiFi" in self.get_title(), "Stratifi page was not loaded"
+    #    assert self.is_element_present("startAnalise", timeout=10), "Client proposal generation screen was not shown"
 
-    def check_models_page_loaded(self):
-       assert self.is_element_present(how=By.XPATH, what='.//*[text()="Start Analyzing Your Portfolios"]')
+    def check_if_the_page_was_loaded(self):
+       assert self.custom_is_element_present(how=By.XPATH, what='.//*[text()="Start Analyzing Your Portfolios"]', timeout=20), "Unable to load the page"
 
 
     def check_if_propgen_screen_was_shown(self):

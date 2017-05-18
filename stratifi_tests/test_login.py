@@ -21,7 +21,7 @@ class TestLogin(BaseTest):
         self.sign_in_page.press_sign_in()
         self.stratifi_page = StratifiPage()
         time.sleep(5)
-        self.stratifi_page.check_models_page_loaded()
+        self.stratifi_page.check_if_the_page_was_loaded()
         # self.stratifi_page.check_if_page_is_loaded()
         # print('Successfully logged in: ' + str(stratifi_page.is_element_present('startAnalise', timeout=60)))
 

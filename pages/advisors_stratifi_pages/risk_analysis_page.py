@@ -77,8 +77,13 @@ class RiskAnalysisPage(AbstractBasePage):
     def check_if_any_tickers_suggested(self):
         assert self.is_element_present("firstSuggestion", timeout=60), "I can't see any suggested tickers"
 
+    # def check_prism_analysis_is_shown(self):
+    #     assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"
+
     def check_prism_analysis_is_shown(self):
-        assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"
+        # assert self.is_element_present("overviewForHeader", timeout=60), "Prism analysis was not shown"
+
+        assert self.custom_is_element_present(how=By.XPATH, what='.//*[contains(text(),"PRISM Overview for")]', timeout=60), "Prism analysis was not shown"
 
     def check_if_proposal_from_prism_generated(self):
         assert self.is_element_present("summaryHeader", timeout=60), "Proposal from prism was not generated"

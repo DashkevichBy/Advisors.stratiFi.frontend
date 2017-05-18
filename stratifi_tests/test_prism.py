@@ -13,7 +13,7 @@ class TestPrism(BaseTest):
 
     def test_prism_from_dashboard(self):
         stratifi_page = StratifiPage()
-        stratifi_page.check_models_page_loaded()
+        stratifi_page.check_if_the_page_was_loaded()
         # print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))
         stratifi_page.press_start_analise()
         stratifi_page.press_go_to_prism()
