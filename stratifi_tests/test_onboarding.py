@@ -3,7 +3,6 @@ import time
 import pytest
 from pages.advisors_stratifi_pages.clients_page import ClientsPage
 from pages.advisors_stratifi_pages.link_accounts_page import LinkAccountsPage
-from pages.advisors_stratifi_pages.sign_in_page import SignInPage
 from pages.advisors_stratifi_pages.stratifi_page import StratifiPage
 
 from common import BaseTest
@@ -15,13 +14,8 @@ class TestOnboarding(BaseTest):
     clients_page = ClientsPage()
     link_accounts_page = LinkAccountsPage()
     documents_page = DocumentsPage()
-    sign_in_page = SignInPage()
 
     def test_link_acc_and_send_documents(self):
-        self.sign_in_page.open()
-        self.sign_in_page.enter_login('akhil@stratifi.com')
-        self.sign_in_page.enter_password('Hell0w0rld123!')
-        self.sign_in_page.press_sign_in()
         self.stratifi_page.check_if_page_is_loaded()
         # print('Page is loaded: ' + str(self.stratifi_page.is_element_present('startAnalise')))
         self.stratifi_page.press_client_button()
