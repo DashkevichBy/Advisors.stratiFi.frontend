@@ -1,12 +1,12 @@
+import unittest
 from selenium.webdriver.common.by import By
 from webium import Find
 from abstract_base_page import AbstractBasePage
 
 
-class StratifiPage(AbstractBasePage):
+class StratifiPage(AbstractBasePage, unittest.TestCase):
     startAnalise = Find(by=By.XPATH, value='.//*[text()="Start Analyzing Your Portfolios"]')
     goToPrismButton = Find(by=By.XPATH, value='.//*[text()="Go to PRISM"]')
-    # clientsButton = Find(by=By.XPATH, value='.//*[@class="icon-clients_nav"]/following-sibling::*')
     clientsButton = Find(by=By.XPATH, value='.//*[text()="Clients"]')
     validClient = Find(by=By.XPATH, value='.//*[text()="Beckert"]')
     profileDropDown = Find(by=By.XPATH, value='.//*[@id="dropdownUserExtra"]')
@@ -81,16 +81,21 @@ class StratifiPage(AbstractBasePage):
 # ---------------Asserts-------------------------------
 
     def check_if_page_is_loaded(self):
-       assert self.is_element_present("startAnalise", timeout=5), "Client proposal generation screen was not shown"
+       # assert u"StratiFi" in self.get_title(), "Stratifi page was not loaded"
+       assert self.is_element_present("startAnalise", timeout=10), "Client proposal generation screen was not shown"
+
+    def check_models_page_loaded(self):
+       assert self.is_element_present(how=By.XPATH, what='.//*[text()="Start Analyzing Your Portfolios"]')
+
 
     def check_if_propgen_screen_was_shown(self):
-       assert self.is_element_present("propGenHeader", timeout=5), "Client proposal generation screen was not shown"
+       assert self.is_element_present("propGenHeader", timeout=10), "Client proposal generation screen was not shown"
 
     def check_if_proposal_was_generated(self):
        assert self.is_element_present("proposalHeader", timeout=40), "Proposal was not generated"
 
     def check_if_generate_proposal_popup_is_shown(self):
-       assert self.is_element_present("generateProposalPopUp", timeout=5), "Generate proposal pop up was not shown"
+       assert self.is_element_present("generateProposalPopUp", timeout=10), "Generate proposal pop up was not shown"
 
 
 
