@@ -12,20 +12,18 @@ mylogger = logging.getLogger()
 
 
 class TestLogin(BaseTest):
+    stratifi_page = StratifiPage()
+    sign_in_page = SignInPage()
 
     def test_login(self):
-        mylogger.info('Trying to login')
-        sign_in_page = SignInPage()
-        sign_in_page.open()
-        sign_in_page.enter_login('akhil@stratifi.com')
-        sign_in_page.enter_password('Hell0w0rld123!')
-        sign_in_page.press_sign_in()
-        stratifi_page = StratifiPage()
-        stratifi_page.check_if_page_is_loaded()
+        self.sign_in_page.open()
+        self.sign_in_page.enter_login('akhil@stratifi.com')
+        self.sign_in_page.enter_password('Hell0w0rld123!')
+        self.sign_in_page.press_sign_in()
+        self.stratifi_page.check_if_page_is_loaded()
         # print('Successfully logged in: ' + str(stratifi_page.is_element_present('startAnalise', timeout=60)))
 
 
 if __name__ == "__main__":
-    mylogger.info(' About to start the tests ')
-    pytest.main(args=['-s', os.path.abspath(__file__)])
-    mylogger.info(' Done executing the tests ')
+    pytest.main()
+

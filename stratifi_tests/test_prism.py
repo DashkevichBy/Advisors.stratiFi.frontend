@@ -9,7 +9,7 @@ from pages.advisors_stratifi_pages.models_page import ModelsPage
 
 
 class TestPrism(BaseTest):
-    def test_prism_from_dashboard(self):
+    def xtest_prism_from_dashboard(self):
         stratifi_page = StratifiPage()
         stratifi_page.check_if_page_is_loaded()
         # print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))
@@ -23,7 +23,7 @@ class TestPrism(BaseTest):
         risk_analysis_page.check_prism_analysis_is_shown()
         # print('Prism from dashboard works: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
 
-    def test_prism_from_left_panel(self):
+    def xtest_prism_from_left_panel(self):
         stratifi_page = StratifiPage()
         stratifi_page.open()
         stratifi_page.press_prism_button()
@@ -36,7 +36,7 @@ class TestPrism(BaseTest):
         risk_analysis_page.check_prism_analysis_is_shown()
         # print('Prism from left panel: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
 
-    def test_prism_creating_new_model(self):
+    def xtest_prism_creating_new_model(self):
         stratifi_page = StratifiPage()
         stratifi_page.open()
         stratifi_page.press_prism_button()
@@ -60,7 +60,7 @@ class TestPrism(BaseTest):
         risk_analysis_page.check_prism_analysis_is_shown()
         # print('Prism analysis for new model works: ' + str(risk_analysis_page.is_element_present('overviewForHeader')))
 
-    def test_archive_created_model(self):
+    def xtest_archive_created_model(self):
         stratifi_page = StratifiPage()
         stratifi_page.open()
         stratifi_page.press_portfolio_button()

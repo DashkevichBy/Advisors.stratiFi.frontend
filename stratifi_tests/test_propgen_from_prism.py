@@ -8,7 +8,7 @@ from pages.advisors_stratifi_pages.risk_analysis_page import RiskAnalysisPage
 
 
 class TestPropGenFromPrism(BaseTest):
-    def test_propgen_from_prism(self):
+    def xtest_propgen_from_prism(self):
         stratifi_page = StratifiPage()
         risk_analysis_page = RiskAnalysisPage()
         stratifi_page.open()

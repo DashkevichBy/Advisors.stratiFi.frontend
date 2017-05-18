@@ -7,7 +7,7 @@ from pages.advisors_stratifi_pages.stratifi_page import StratifiPage
 
 
 class TestPropGenFromStrategies(BaseTest):
-    def test_propgen_from_strategies(self):
+    def xtest_propgen_from_strategies(self):
         stratifi_page = StratifiPage()
         stratifi_page.open()
         stratifi_page.check_if_page_is_loaded()
