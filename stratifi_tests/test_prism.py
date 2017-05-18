@@ -9,7 +9,7 @@ from pages.advisors_stratifi_pages.models_page import ModelsPage
 
 
 class TestPrism(BaseTest):
-    def xtest_prism_from_dashboard(self):
+    def test_prism_from_dashboard(self):
         stratifi_page = StratifiPage()
         stratifi_page.check_if_page_is_loaded()
         # print('Page is loaded: ' + str(stratifi_page.is_element_present('startAnalise')))

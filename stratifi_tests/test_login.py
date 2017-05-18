@@ -17,8 +17,8 @@ class TestLogin(BaseTest):
         self.sign_in_page.enter_login('akhil@stratifi.com')
         self.sign_in_page.enter_password('Hell0w0rld123!')
         self.sign_in_page.press_sign_in()
-        stratifi_page = StratifiPage()
-        stratifi_page.check_if_page_is_loaded()
+        # stratifi_page = StratifiPage()
+        # stratifi_page.check_if_page_is_loaded()
         # print('Successfully logged in: ' + str(stratifi_page.is_element_present('startAnalise', timeout=60)))
 
 
