@@ -85,7 +85,7 @@ class StratifiPage(AbstractBasePage, unittest.TestCase):
     #    assert self.is_element_present("startAnalise", timeout=10), "Client proposal generation screen was not shown"
 
     def check_if_the_page_was_loaded(self):
-       assert self.custom_is_element_present(how=By.XPATH, what='.//*[text()="Start Analyzing Your Portfolios"]', timeout=20), "Unable to load the page"
+       assert self.custom_is_element_present(how=By.XPATH, what='.//*[text()="Start Analyzing Your Portfolios"]'), "Unable to load the page"
 
 
     def check_if_propgen_screen_was_shown(self):
