@@ -6,7 +6,7 @@ machine:
 
 dependencies:
   pre:
-    - pip install selenium=2.53.1
+    - pip install selenium==2.53.1
     - pip install webium
     - pip install --upgrade pip
     - apt-get update; sudo apt-get install pigz
