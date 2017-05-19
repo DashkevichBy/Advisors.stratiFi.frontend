@@ -44,7 +44,7 @@ def is_element_present(self, element_name, just_in_dom=False, timeout=10):
         _get_driver().implicitly_wait(webium.settings.implicit_timeout)
 
 
-def custom_is_element_present(self, how, what, timeout):
+def custom_is_element_present(self, how, what):
     def _get_driver():
         try:
             driver = getattr(self, '_driver')
@@ -54,9 +54,9 @@ def custom_is_element_present(self, how, what, timeout):
             return driver
         return get_driver()
 
-    _get_driver().implicitly_wait(timeout)
+    _get_driver().implicitly_wait(60)
     try:
-        _get_driver().implicitly_wait(timeout)
+        # _get_driver().implicitly_wait(timeout)
         _get_driver().find_element(by=how, value=what)
     except NoSuchElementException:
         return False
